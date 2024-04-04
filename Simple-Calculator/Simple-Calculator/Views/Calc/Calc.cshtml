@@ -1,0 +1,49 @@
+﻿@model List<Simple_Calculator.Models.CalcModel>
+<center>
+    <div class="Lines">
+
+        <div class="Disp">
+            <partial name="_display" />
+        </div>
+
+        <div class="firstline">
+            <div class="calc-button" id="del" value="del">⌫</div>
+            <div class="calc-button" id="ac">AC</div>
+            <div class="op-button" id="div" value="div">/</div>
+            <div class="op-button" id="mul" value="mul">*</div>
+        </div>
+
+        <div class="secondline">
+            <div class="num-button" id="7">7</div>
+            <div class="num-button" id="8">8</div>
+            <div class="num-button" id="9">9</div>
+            <div class="op-button" id="sub">-</div>
+        </div>
+
+        <div class="thirdline">
+            <div class="num-button" id="4">4</div>
+            <div class="num-button" id="5">5</div>
+            <div class="num-button" id="6">6</div>
+            <div class="op-button" id="add">+</div>
+        </div>
+
+
+        <div class="fourthline">
+            <div class="zero-button" id="0">0</div>
+            <div class="num-button" id="1">1</div>
+            <div class="num-button" id="2">2</div>
+            <div class="num-button" id="3">3</div>
+        </div>
+
+
+        <div class="fifthline">
+            <div class="dot-button" id="dot">.</div>
+            <div class="coma-button" id="coma">,</div>
+            <button class="eq-button" id="eq">=</button>
+        </div>
+    </div>
+</center>
+@section Scripts {
+
+    <script src="~/js/ButtonHandler.js"></script>
+}
